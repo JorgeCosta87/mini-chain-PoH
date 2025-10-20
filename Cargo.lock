@@ -166,6 +166,7 @@ dependencies = [
  "base58",
  "ed25519-dalek",
  "rand",
+ "sha2",
 ]
 
 [[package]]

@@ -63,7 +63,7 @@ impl PoH {
 
     pub fn compute_tick_hashes(&mut self) -> PoHResult 
     {
-        let reamining_hashes = min(self.hashes_per_tick, self.hashes_per_tick - self.hash_count); // just for safety
+        let reamining_hashes = min(self.hashes_per_tick, self.hashes_per_tick - self.hash_count);
         for _ in 0..reamining_hashes {
             self.compute_hash(None)
         }
